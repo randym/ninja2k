@@ -85,6 +85,7 @@ module Ninja2k
     #
     # @return [Array]
     def scrape
+      @package = nil
       @output = []
       clues.each do |clue|
         if detail = parse_clue(clue)
