@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.name          = "ninja2k"
   gem.require_paths = ["lib"]
   gem.version       = Ninja2k::VERSION
-
+  gem.has_rdoc      = 'ninja2k'
   gem.add_runtime_dependency 'nokogiri'
   gem.add_runtime_dependency 'axlsx'
   gem.add_development_dependency 'kramdown'
