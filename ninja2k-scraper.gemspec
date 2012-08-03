@@ -4,9 +4,9 @@ require File.expand_path('../lib/ninja2k-scraper/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Randy Morgan"]
   gem.email         = ["digital.ipseity@gmail.com"]
-  gem.description   = %q{A quick web resource scraper that lets you define xpath selectors, clues and hooks for custom parsing as well as export to xlsx.}
+  gem.description   = %q{A web resource scraper that lets you define xpath selectors, clues and hooks for custom parsing as well as export to xlsx.}
   gem.summary       = %q{}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/randym/ninja2k-scraper"
 
   gem.files         = Dir.glob("{lib/**/*,example/**/*}") + %w(README.md LICENSE Rakefile)
   gem.test_files    = gem.files.grep("{test/**/*}")
