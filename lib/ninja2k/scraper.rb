@@ -95,14 +95,14 @@ module Ninja2k
       output
     end
 
-    # seralizes the output to xlsx. If you specify false for the file_name parameter
+    # seralizes the output to xlsx. If you do not specify the file_name parameter
     # The package will be created, but not serialized to disk. This means you can use the return value
     # to stream the data using to_xlsx(false).to_stream.read
     #
     # @param [String] filename the filename to use in output
     #
     # @return [Axlsx::Package]
-    def to_xlsx(filename)
+    def to_xlsx(filename=false)
       scrape
       serialize(filename)
     end
@@ -156,7 +156,7 @@ module Ninja2k
       end
     end
 
-    def serialize(file_name=nil)
+    def serialize(file_name)
       package.workbook.add_worksheet do |sheet|
         output.each { |datum| sheet.add_row datum }
       end

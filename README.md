@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-# Basic Scraping
+### Basic Scraping
 
     require 'ninja2k'
 
@@ -36,7 +36,7 @@ Or install it yourself as:
     scraper.to_xlsx('my_spreadsheet.xlsx')
 
 
-# With Hooks and Styles
+### With Hooks and Styles
 
     require 'ninja2k'
 
@@ -60,7 +60,7 @@ Or install it yourself as:
     # You can also alter the xlsx spreadsheet before serializing.
     # See https://github.com/randym/axlsx
 
-    package = scraper.to_xlsx false
+    package = scraper.to_xlsx
     clue_style = package.workbook.styles.add_style :fg_color => 'FF0000'
     package.workbook.worksheets.first.col_style(0, clue_style)
     package.serialize('styled.xlsx')
@@ -73,4 +73,9 @@ Or install it yourself as:
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-copyright randym 2012
+## Copyright and License
+----------
+
+Ninja2k &copy; 2012 by [Randy Morgan](mailto:digial.ipseity@gmail.com). 
+
+Ninja2k is licensed under the MIT license. Please see the LICENSE document for more information.
